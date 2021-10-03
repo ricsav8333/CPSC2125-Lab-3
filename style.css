@@ -1,7 +1,86 @@
-body {
- background-color: lightsalmon;
+a {
+      text-decoration:none;
+} 
+a.emailit {
+      text-decoration:none;
+}
+p{
+  margin: 10px;
+}
+ul{
+  margin: 10px;
+}
+h0{
+  margin: 10px;
 }
 h1 {
-  color: rgb(151, 135, 135)
-
+  text-decoration: underline;
+  position: relative;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'pug    pug    pug'
+  'menu   head1 head1'
+  'menu center right'
+  'footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+}
+.grid-item {
+  background-color: white;
+}
+.item1 {
+  grid-area: pug / pug / pug / pug;
+  display: contents;
+}
+.item2 {
+  grid-area: menu;
+   background-color: #2196F3;
+}
+.item3 {
+  grid-area: head1;
+}
+.item4 {
+  grid-area: center;
+}
+.item5 {
+  grid-area: right; 
+  font-style: italic;
+}
+footer {
+  grid-area: footer;
+}
+#p2 {
+  font-weight: bold;
+}
+#li1 {
+  background-color: #b62f2f;
+}
+#li2 {
+  background-color: #FFFF00;
+}
+#li4 {
+  background-color: #FFFF00;
+} 
+#li5 {
+  background-color: #90EE90;
+}
+li:hover
+{
+  background-color: rgb(62, 212, 179);
+  color:rgb(215, 250, 238)
+}
+#p3 {
+  font-weight: bold;
+}
+#ul1 {
+  float: left;
+}
+#h0 {
+  text-align:center;
+}
+#h1 {
+  font-size: large;
 }
