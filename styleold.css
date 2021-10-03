@@ -1,15 +1,6 @@
 a {
       text-decoration:none;
 }
-p{
-  margin: 10px;
-}
-ul{
-  margin: 10px;
-}
-h0{
-  margin: 10px;
-}
 h1 {
   text-decoration: underline;
   position: relative;
@@ -17,12 +8,13 @@ h1 {
 }
 .grid-container {
   display: grid;
+  grid-template-columns: 80px 2fr 2fr;
   grid-template-areas:
   'pug    pug    pug'
   'menu   head1 head1'
   'menu center right'
   'footer footer footer';
-  grid-gap: 10px;
+  font-size: 20px;
   background-color: #2196F3;
 }
 .grid-item {
